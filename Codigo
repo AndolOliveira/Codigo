@@ -1,0 +1,16 @@
+# Leitura do número de intervalos
+N = int(input())
+
+# Inicializa a variável para a distância total
+distancia_total = 0
+
+# Processa cada intervalo
+for _ in range(N):
+    T, V = map(int, input().split())
+    # Calcula a distância percorrida no intervalo
+    distancia_intervalo = T * V
+    # Acumula a distância total
+    distancia_total += distancia_intervalo
+
+# Imprime a distância total percorrida
+print(distancia_total)
